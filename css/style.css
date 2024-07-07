@@ -194,10 +194,10 @@ body, html {
 }
 
 .card {
-    background: #000000;
+    background: #000000;    
     padding: 10px;
-    box-shadow: 0 0px 3px 1px rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
     width: 30%;
     display: flex;
     align-items: flex-start;
@@ -206,8 +206,8 @@ body, html {
 .card video {
     width: 220px;
     height: auto;
-    margin-right: 10px;
-    border-radius: 5px;
+    margin-right: 20px;
+    border-radius: 20px;
 }
 
 .card-content {
@@ -217,7 +217,7 @@ body, html {
 .card-content h6 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: white;
+    color: #ff4500;
 }
 
 .card-content p {
@@ -295,7 +295,7 @@ body, html {
 }
 
 .musician-section {
-    padding: 50px 15%;
+    padding: 50px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,8 +343,8 @@ body, html {
 .musician-info button {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #007bff;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -370,7 +370,7 @@ body, html {
 .footer-photos {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    border-bottom: 2px dashed white;
 }
 
 .photo {
@@ -379,6 +379,7 @@ body, html {
     flex: 1;
     cursor: pointer;
     transition: transform 0.3s ease;
+    
 }
 
 .photo img {
@@ -388,8 +389,9 @@ body, html {
 }
 
 .photo:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     z-index: 1;
+    filter: brightness(1);
 }
 
 .footer-content {
@@ -397,7 +399,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 30vh;
+    height: 60vh;
     background-color: #000000;
     padding: 20px 10%;
 }
