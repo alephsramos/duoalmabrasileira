@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.feed-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 10;
+}
+
+.feed-logo {
+    font-size: 24px;
+}
+
+.feed-address {
+    font-size: 18px;
+}
+
+.feed-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+.feed-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 400;
+}
+
+.feed-content button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+}
+
+.header::before, .header::after, .header::before::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.header::before {
+    background-image: url('image1.jpg');
+    z-index: 1;
+    opacity: 1;
+}
+
+.header::after {
+    background-image: url('image2.jpg');
+    z-index: 2;
+    opacity: 0;
+}
+
+.header::before::after {
+    background-image: url('image3.jpg');
+    z-index: 3;
+    opacity: 0;
+}
+
+@keyframes slide {
+    0%, 33.33% { opacity: 1; }
+    33.34%, 66.66% { opacity: 0; }
+    66.67%, 100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .feed-navbar {
+        padding: 20px 10%;
+    }
+
+    .feed-content h1 {
+        font-size: 36px;
+    }
+
+    .feed-content button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feed-navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feed-content h1 {
+        font-size: 28px;
+    }
+
+    .feed-content button {
+        font-size: 14px;
+    }
+}
+
+.header::before {
+    animation: slide 9s infinite;
+}
+
+.header::after {
+    animation: slide 9s infinite 3s;
+}
+
+.header::before::after {
+    animation: slide 9s infinite 6s;
+}
+
+.main-content {
+    padding: 20px 15%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card video {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.card-content button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card video {
+        margin: 0 0 10px 0;
+    }
+
+    .card-content {
+        text-align: center;
+    }
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.photo-row {
+    display: flex;
+    flex: 1;
+}
+
+.gallery-photo {
+    width: 25%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.gallery-photo:hover {
+    filter: brightness(1);
+}
+
+.photo-gallery:hover .gallery-photo {
+    filter: brightness(0.3);
+}
+
+.photo-gallery:hover .gallery-photo:hover {
+    filter: brightness(1);
+}
+
+
+.schedule-section {
+    padding: 20px 15%;
+}
+
+.schedule-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.musician-section {
+    padding: 50px 15%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.musician-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.musician-image {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.musician-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    border-radius: 8px;
+}
+
+.musician-info {
+    flex: 1;
+    text-align: left;
+}
+
+.musician-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.musician-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.musician-info button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .musician-container {
+        flex-direction: column;
+    }
+    
+    .musician-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-photos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    text-align: center;
+}
+
+.center-content {
+    flex: 1;
+    text-align: center;
+}
+
+.center-content img {
+    max-width: 100px;
+    height: auto;
+}
+
+.right-content a {
+    margin: 0 10px;
+}
+
+.right-content img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.right-content img:hover {
+    transform: scale(1.2);
+}   
