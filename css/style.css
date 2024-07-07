@@ -362,6 +362,19 @@ body, html {
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .musician-info p{
+        text-align: center;
+    }
+
+    .musician-info h2{
+        text-align: center;
+    }
+
+    .musician-info button{
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer {
@@ -436,3 +449,32 @@ body, html {
 .right-content img:hover {
     transform: scale(1.2);
 }   
+
+@media (max-width: 768px) {
+    .footer-photos {
+        padding: 0 5%; /* Reduz o padding horizontal das fotos */
+    }
+
+    .photo {
+        width: 30%; /* Ajusta a largura das fotos para ocupar mais espaço */
+    }
+
+    .left-content, .right-content, .center-content {
+        flex: 1 1 100%; /* Ocupa todo o espaço disponível */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 10px; /* Reduz o espaçamento entre as seções */
+    }
+
+    .center-content img {
+        max-width: 60px; /* Reduz ainda mais o tamanho do logo */
+    }
+
+    .right-content a {
+        margin: 0 3px; /* Diminui ainda mais a margem entre os links */
+    }
+
+    .right-content img {
+        width: 25px;
+        height: 25px;
+    }
+}
