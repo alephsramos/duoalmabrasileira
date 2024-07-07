@@ -363,6 +363,10 @@ body, html {
         margin-bottom: 20px;
     }
 
+    .title-main-1{
+        font-size: 16px;
+    }
+
     .musician-info p{
         text-align: center;
     }
