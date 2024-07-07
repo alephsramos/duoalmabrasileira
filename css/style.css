@@ -432,10 +432,8 @@ body, html {
 
     .musician-button{
         display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        margin: 0 auto; /* Centraliza horizontalmente */
+        text-align: center; 
 
     }
 }
