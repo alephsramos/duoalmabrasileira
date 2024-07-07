@@ -168,21 +168,35 @@ body, html {
     animation: slide 9s infinite 6s;
 }
 
-.main-content {
-    padding: 20px 10%;
+
+.div-title-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.title-main-1{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
+    margin-top: 5%;
+    padding: 0px 10%;
 }
 
 .card {
     background: #000000;
     padding: 10px;
-    border: 1px solid #ddd;
+    box-shadow: 0 0px 3px 1px rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     width: 30%;
     display: flex;
@@ -190,7 +204,7 @@ body, html {
 }
 
 .card video {
-    width: 200px;
+    width: 220px;
     height: auto;
     margin-right: 10px;
     border-radius: 5px;
@@ -202,7 +216,7 @@ body, html {
 
 .card-content h6 {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -214,7 +228,7 @@ body, html {
 
 .card-content button {
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 8px 50px;
     border: none;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -241,8 +255,7 @@ body, html {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    margin-bottom: 5%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -253,6 +266,7 @@ body, html {
 
 .gallery-photo {
     width: 25%;
+    height: auto;
     object-fit: cover;
     transition: filter 0.3s ease;
 }
@@ -271,7 +285,8 @@ body, html {
 
 
 .schedule-section {
-    padding: 20px 15%;
+    padding: 20px 0%;
+    background-color: white;
 }
 
 .schedule-section h2 {
@@ -281,7 +296,6 @@ body, html {
 
 .musician-section {
     padding: 50px 15%;
-    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,10 +330,12 @@ body, html {
 .musician-info h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .musician-info p {
     font-size: 18px;
+    color: white;
     line-height: 1.6;
     margin-bottom: 30px;
 }
@@ -346,9 +362,9 @@ body, html {
 }
 
 .footer {
-    background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 0;
+    width: 100%;
 }
 
 .footer-photos {
@@ -381,11 +397,15 @@ body, html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    height: 30vh;
+    background-color: #000000;
+    padding: 20px 10%;
 }
 
 .left-content, .right-content {
     flex: 1;
-    text-align: center;
+    text-align: left;
+    margin-left: 5%;
 }
 
 .center-content {
