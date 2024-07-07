@@ -139,6 +139,10 @@ body, html {
     .feed-content button {
         font-size: 16px;
     }
+
+    .feed-address {
+        font-size: 0px;
+    }
 }
 
 @media (max-width: 480px) {
