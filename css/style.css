@@ -488,7 +488,7 @@ body, html {
     }
 
     .photo {
-        width: 50%; /* Ajusta a largura das fotos para ocupar mais espaço */
+        width: 80%; /* Ajusta a largura das fotos para ocupar mais espaço */
     }
 
     .left-content, .right-content, .center-content {
