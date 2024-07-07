@@ -502,7 +502,7 @@ body, html {
     }
 
     .center-content img {
-        max-width: 20px; /* Reduz ainda mais o tamanho do logo */
+        max-width: 70px; /* Reduz ainda mais o tamanho do logo */
     }
 
     .right-content a {
@@ -510,7 +510,7 @@ body, html {
     }
 
     .right-content img {
-        width: 10px;
-        height: 10px;
+        width: 30px;
+        height: 30px;
     }
 }
