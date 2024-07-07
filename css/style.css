@@ -140,11 +140,11 @@ body, html {
     }
 
     .feed-content h1 {
-        font-size: 36px;
+        font-size: 46px;
     }
 
     .feed-content button {
-        font-size: 16px;
+        font-size: 29px;
     }
 
     .feed-address {
@@ -159,11 +159,11 @@ body, html {
     }
 
     .feed-content h1 {
-        font-size: 28px;
+        font-size:38px;
     }
 
     .feed-content button {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
@@ -379,11 +379,12 @@ body, html {
     
     .musician-image {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .title-main-1{
         font-size: 30px;
+        margin-top: 5%;
     }
 
     .musician-info p{
@@ -397,6 +398,14 @@ body, html {
     .musician-info button{
         align-items: center;
         text-align: center;
+    }
+
+    .musician-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
     }
 }
 
@@ -475,17 +484,21 @@ body, html {
 
 @media (max-width: 768px) {
     .footer-photos {
-        padding: 0 5%; /* Reduz o padding horizontal das fotos */
+        padding: 0 0; /* Reduz o padding horizontal das fotos */
     }
 
     .photo {
-        width: 30%; /* Ajusta a largura das fotos para ocupar mais espaço */
+        width: 50%; /* Ajusta a largura das fotos para ocupar mais espaço */
     }
 
     .left-content, .right-content, .center-content {
         flex: 1 1 100%; /* Ocupa todo o espaço disponível */
         text-align: center; /* Centraliza o texto */
-        margin-bottom: 10px; /* Reduz o espaçamento entre as seções */
+        margin-bottom: 0px; /* Reduz o espaçamento entre as seções */
+    }
+
+    .left-content p{
+        font-size: 18px;
     }
 
     .center-content img {
