@@ -233,8 +233,7 @@ body, html {
 }
 
 .card-content {
-    flex: 1;
-    border-right: 1px solid white;
+    flex: 1;    
     padding-left: 5px;
     padding-right: 15px;
 }
@@ -445,23 +444,33 @@ body, html {
     width: 100%;
 }
 
+.partnership-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.partnership-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .footer-photos {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dashed white;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as imagens */
 }
 
 .photo {
-    position: relative;
     overflow: hidden;
-    flex: 1;
     cursor: pointer;
     transition: transform 0.3s ease;
-    
 }
 
 .photo img {
-    width: 100%;
+    width: 80px;
     height: auto;
     transition: transform 0.3s ease;
 }
